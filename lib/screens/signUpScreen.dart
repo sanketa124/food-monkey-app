@@ -35,9 +35,9 @@ class SignUpScreen extends StatelessWidget {
               Spacer(),
               CustomTextInput(hintText: "Address"),
               Spacer(),
-              CustomTextInput(hintText: "Password"),
+              CustomTextInput(hintText: "Password", obscure: true),
               Spacer(),
-              CustomTextInput(hintText: "Confirm Password"),
+              CustomTextInput(hintText: "Confirm Password", obscure: true),
               Spacer(),
               SizedBox(
                 height: 50,
