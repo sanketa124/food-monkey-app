@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:monkey_app_demo/screens/signUpScreen.dart';
 import 'package:shadow_clip/shadow_clip.dart';
 import 'package:monkey_app_demo/screens/loginScreen.dart';
 
@@ -95,7 +96,10 @@ class LandingScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed(SignUpScreen.routeName);
+                      },
                       child: Text("Create an Account"),
                     ),
                   ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:monkey_app_demo/screens/homeScreen.dart';
 import '../const/colors.dart';
 import '../screens/loginScreen.dart';
 import '../utils/helper.dart';
@@ -42,7 +43,10 @@ class SignUpScreen extends StatelessWidget {
                 height: 50,
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context)
+                        .pushReplacementNamed(HomeScreen.routeName);
+                  },
                   child: Text("Sign Up"),
                 ),
               ),
