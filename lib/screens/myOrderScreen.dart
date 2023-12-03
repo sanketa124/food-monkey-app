@@ -27,7 +27,7 @@ class MyOrderScreen extends StatelessWidget {
                     Expanded(
                       child: Text(
                         "My Order",
-                        style: Helper.getTheme(context).headline5,
+                        style: Helper.getTheme(context).headlineSmall,
                       ),
                     )
                   ],
@@ -63,7 +63,7 @@ class MyOrderScreen extends StatelessWidget {
                           children: [
                             Text(
                               "King Burgers",
-                              style: Helper.getTheme(context).headline3,
+                              style: Helper.getTheme(context).displaySmall,
                             ),
                             Row(
                               children: [
@@ -179,7 +179,7 @@ class MyOrderScreen extends StatelessWidget {
                             Expanded(
                               child: Text(
                                 "Delivery Instruction",
-                                style: Helper.getTheme(context).headline3,
+                                style: Helper.getTheme(context).displaySmall,
                               ),
                             ),
                             TextButton(
@@ -209,12 +209,12 @@ class MyOrderScreen extends StatelessWidget {
                           Expanded(
                             child: Text(
                               "Sub Total",
-                              style: Helper.getTheme(context).headline3,
+                              style: Helper.getTheme(context).displaySmall,
                             ),
                           ),
                           Text(
                             "\$68",
-                            style: Helper.getTheme(context).headline3.copyWith(
+                            style: Helper.getTheme(context).displaySmall?.copyWith(
                                   color: AppColor.orange,
                                 ),
                           )
@@ -228,12 +228,12 @@ class MyOrderScreen extends StatelessWidget {
                           Expanded(
                             child: Text(
                               "Delivery Cost",
-                              style: Helper.getTheme(context).headline3,
+                              style: Helper.getTheme(context).displaySmall,
                             ),
                           ),
                           Text(
                             "\$2",
-                            style: Helper.getTheme(context).headline3.copyWith(
+                            style: Helper.getTheme(context).displaySmall?.copyWith(
                                   color: AppColor.orange,
                                 ),
                           )
@@ -254,12 +254,12 @@ class MyOrderScreen extends StatelessWidget {
                           Expanded(
                             child: Text(
                               "Total",
-                              style: Helper.getTheme(context).headline3,
+                              style: Helper.getTheme(context).displaySmall,
                             ),
                           ),
                           Text(
                             "\$70",
-                            style: Helper.getTheme(context).headline3.copyWith(
+                            style: Helper.getTheme(context).displaySmall?.copyWith(
                                   color: AppColor.orange,
                                   fontSize: 22,
                                 ),
@@ -297,9 +297,9 @@ class MyOrderScreen extends StatelessWidget {
 
 class BurgerCard extends StatelessWidget {
   const BurgerCard({
-    Key key,
-    String name,
-    String price,
+    Key? key,
+    required String name,
+    required String price,
     bool isLast = false,
   })  : _name = name,
         _price = price,
@@ -326,7 +326,7 @@ class BurgerCard extends StatelessWidget {
         children: [
           Expanded(
             child: Text(
-              "${_name} x1",
+              "$_name x1",
               style: TextStyle(
                 color: AppColor.primary,
                 fontSize: 16,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
 import 'package:monkey_app_demo/widgets/customNavBar.dart';
-import 'package:monkey_app_demo/widgets/customTextInput.dart';
 
 class ProfileScreen extends StatelessWidget {
   static const routeName = "/profileScreen";
@@ -25,7 +24,7 @@ class ProfileScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Profile",
-                            style: Helper.getTheme(context).headline5,
+                            style: Helper.getTheme(context).headlineSmall,
                           ),
                           Image.asset(
                             Helper.getAssetName("cart.png", "virtual"),
@@ -85,7 +84,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       Text(
                         "Hi there Emilia!",
-                        style: Helper.getTheme(context).headline4.copyWith(
+                        style: Helper.getTheme(context).headlineMedium?.copyWith(
                               color: AppColor.primary,
                             ),
                       ),
@@ -169,9 +168,9 @@ class ProfileScreen extends StatelessWidget {
 
 class CustomFormImput extends StatelessWidget {
   const CustomFormImput({
-    Key key,
-    String label,
-    String value,
+    Key? key,
+    required String label,
+    required String value,
     bool isPassword = false,
   })  : _label = label,
         _value = value,

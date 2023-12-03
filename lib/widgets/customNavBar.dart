@@ -1,4 +1,4 @@
-import 'package:clip_shadow/clip_shadow.dart';
+import 'package:shadow_clip/shadow_clip.dart';
 import 'package:flutter/material.dart';
 
 import '../const/colors.dart';
@@ -17,7 +17,7 @@ class CustomNavBar extends StatelessWidget {
   final bool more;
 
   const CustomNavBar(
-      {Key key,
+      { Key? key,
       this.home = false,
       this.menu = false,
       this.offer = false,

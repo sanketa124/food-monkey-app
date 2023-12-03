@@ -26,7 +26,7 @@ class InboxScreen extends StatelessWidget {
                       Expanded(
                         child: Text(
                           "Inbox",
-                          style: Helper.getTheme(context).headline5,
+                          style: Helper.getTheme(context).headlineSmall,
                         ),
                       ),
                       Image.asset(
@@ -94,10 +94,10 @@ class InboxScreen extends StatelessWidget {
 
 class MailCard extends StatelessWidget {
   const MailCard({
-    Key key,
-    String time,
-    String title,
-    String description,
+    Key? key,
+    required String time,
+    required String title,
+    required String description,
     Color color = Colors.white,
   })  : _time = time,
         _title = title,

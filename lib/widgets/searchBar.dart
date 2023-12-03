@@ -4,7 +4,7 @@ import 'package:monkey_app_demo/utils/helper.dart';
 
 class SearchBar extends StatelessWidget {
   final String title;
-  SearchBar({@required this.title});
+  SearchBar({required this.title});
   @override
   Widget build(BuildContext context) {
     return Padding(

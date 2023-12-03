@@ -60,7 +60,7 @@ class AboutScreen extends StatelessWidget {
             bottom: 0,
             left: 0,
             child: CustomNavBar(
-              menu: true,
+              menu: true, key: null,
             ),
           ),
         ],
@@ -71,7 +71,7 @@ class AboutScreen extends StatelessWidget {
 
 class AboutCard extends StatelessWidget {
   const AboutCard({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

@@ -3,9 +3,9 @@ import '../const/colors.dart';
 
 class CustomTextInput extends StatelessWidget {
   const CustomTextInput({
-    @required String hintText,
+    required String hintText,
     EdgeInsets padding = const EdgeInsets.only(left: 40),
-    Key key,
+    Key? key,
   })  : _hintText = hintText,
         _padding = padding,
         super(key: key);

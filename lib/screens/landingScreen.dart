@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:clip_shadow/clip_shadow.dart';
+import 'package:shadow_clip/shadow_clip.dart';
 import 'package:monkey_app_demo/screens/loginScreen.dart';
 
 import '../const/colors.dart';

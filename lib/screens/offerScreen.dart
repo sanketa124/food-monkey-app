@@ -24,7 +24,7 @@ class OfferScreen extends StatelessWidget {
                         children: [
                           Text(
                             "Latest Offers",
-                            style: Helper.getTheme(context).headline5,
+                            style: Helper.getTheme(context).headlineSmall,
                           ),
                           Image.asset(
                             Helper.getAssetName("cart.png", "virtual"),
@@ -104,9 +104,9 @@ class OfferScreen extends StatelessWidget {
 
 class OfferCard extends StatelessWidget {
   const OfferCard({
-    Key key,
-    String name,
-    Image image,
+    Key? key,
+    required String name,
+    required Image image,
   })  : _image = image,
         _name = name,
         super(key: key);
@@ -132,8 +132,8 @@ class OfferCard extends StatelessWidget {
                 Text(
                   _name,
                   style: Helper.getTheme(context)
-                      .headline4
-                      .copyWith(color: AppColor.primary),
+                      .headlineMedium
+                      ?.copyWith(color: AppColor.primary),
                 )
               ],
             ),

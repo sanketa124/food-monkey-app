@@ -118,11 +118,11 @@ class MoreScreen extends StatelessWidget {
 
 class MoreCard extends StatelessWidget {
   const MoreCard({
-    Key key,
-    String name,
-    Image image,
+    Key? key,
+    required String name,
+    required Image image,
     bool isNoti = false,
-    Function handler,
+    required void Function() handler,
   })  : _name = name,
         _image = image,
         _isNoti = isNoti,
@@ -132,7 +132,7 @@ class MoreCard extends StatelessWidget {
   final String _name;
   final Image _image;
   final bool _isNoti;
-  final Function _handler;
+  final void Function() _handler;
 
   @override
   Widget build(BuildContext context) {

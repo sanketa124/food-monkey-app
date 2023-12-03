@@ -1,4 +1,4 @@
-import 'package:clip_shadow/clip_shadow.dart';
+import 'package:shadow_clip/shadow_clip.dart';
 import 'package:flutter/material.dart';
 import 'package:monkey_app_demo/const/colors.dart';
 import 'package:monkey_app_demo/utils/helper.dart';
@@ -102,7 +102,7 @@ class IndividualItem extends StatelessWidget {
                                           child: Text(
                                             "Tandoori Chicken Pizza",
                                             style: Helper.getTheme(context)
-                                                .headline5,
+                                                .headlineSmall,
                                           ),
                                         ),
                                         Padding(
@@ -202,8 +202,8 @@ class IndividualItem extends StatelessWidget {
                                           child: Text(
                                             "Description",
                                             style: Helper.getTheme(context)
-                                                .headline4
-                                                .copyWith(
+                                                .headlineMedium
+                                                ?.copyWith(
                                                   fontSize: 16,
                                                 ),
                                           ),
@@ -237,8 +237,8 @@ class IndividualItem extends StatelessWidget {
                                           child: Text(
                                             "Customize your Order",
                                             style: Helper.getTheme(context)
-                                                .headline4
-                                                .copyWith(
+                                                .headlineMedium
+                                                ?.copyWith(
                                                   fontSize: 16,
                                                 ),
                                           ),
@@ -344,8 +344,8 @@ class IndividualItem extends StatelessWidget {
                                               Text(
                                                 "Number of Portions",
                                                 style: Helper.getTheme(context)
-                                                    .headline4
-                                                    .copyWith(
+                                                    .headlineMedium
+                                                    ?.copyWith(
                                                       fontSize: 16,
                                                     ),
                                               ),
